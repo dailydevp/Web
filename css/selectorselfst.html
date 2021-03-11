@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        /* css element selector */
+        p{
+            text-align: center;
+            color: tomato;
+        }
+        /* css id selector */
+        #pooq1{
+            text-align:right;
+            color: teal;
+        }
+        /* css class selector */
+        .four{
+            text-align: left;
+            color: turquoise;
+        }
+
+
+        p.four{
+            text-align: right;
+            color: violet;
+        }
+
+        
+        p.three{
+            text-align: center;
+            color: yellow;
+            /* css universal selector */
+        * {
+            text-align: right;
+            color: yellowgreen;
+        }
+
+        /* css grouping selector */
+        h1, h2 , p {
+            text-align : center;
+            color: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+    <h2>Est officia cupiditate voluptates molestiae error?</h2>
+    <p>Lorem, ipsum dolor.</p>
+    <p id="pooq1">Lorem, ipsum.</p>
+    <p class="four">Lorem ipsum dolor sit.</p>
+    <p class="four three">Lorem, ipsum.</p>
+</body>
+</html>
