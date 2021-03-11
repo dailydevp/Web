@@ -1,0 +1,110 @@
+<!-- child selector div>p -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div>p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Temporibus, quisquam harum.</p>
+            <p>Similique, necessitatibus autem!</p>
+        
+    </div>
+   <h2>Cupiditate maiores quis quibusdam dicta.</h2>
+       <p>Lorem, ipsum dolor.</p>
+       <p>Nesciunt, sint inventore.</p>
+       <p>Molestias, mollitia voluptate?</p>
+   
+</body>
+</html> 
+
+ <!--descendant selector div p-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div p {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <div>
+        <p>Lorem 1 ipsum dolor sit amet.</p>
+        <p>Odit fugit 2 possimus incidunt eligendi.</p>
+        <section><p>Labore reprehenderit 3 minima ab voluptate.</p> </section>
+
+    </div>
+
+    <p>Lorem 4 ipsum dolor sit.</p>
+    <p>Ullam 5 optio tenetur natus?</p>
+</body>
+</html>
+
+    <!--adjacent sibling selector div+p-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div+p{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit doloribus recusandae atque soluta inventore quia vel voluptas repellat! Maiores excepturi ducimus debitis, mollitia maxime magni repellat veritatis sunt nihil. Pariatur?</p>
+    <p>Inventore hic voluptas impedit temporibus officiis est eum adipisci beatae doloremque reiciendis atque, ducimus harum quaerat iure? Commodi iure illo laboriosam pariatur, nobis dolores nisi ex quae maiores assumenda id.</p>
+   
+    <div>
+        <p>Lorem ipsum 1 dolor sit amet.</p>
+        <p>Dolores voluptatibus 2 quae distinctio veritatis?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit, 3 amet consectetur adipisicing elit. Eligendi, inventore?</p>
+    <p>Aut molestiae quibusdam 4 corporis voluptas natus optio earum cupiditate obcaecati.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit 5 amet.</p>
+        <p>Dolores voluptatibus 6 quae distinctio veritatis?</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet 7 consectetur adipisicing elit. Eligendi, inventore?</p>
+    <p>Aut molestiae quibusdam 8 corporis voluptas natus optio earum cupiditate obcaecati.</p>
+
+    <!--general sibling selector div ~ p -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            div~p{
+                background-color: indianred;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Facere, velit! Similique, neque ex.</p>
+        <div>
+            <p>Lorem, ipsum dolor.</p>
+        </div>
+            <p>Lorem ipsum dolor sit.</p>
+            <code>Lorem, ipsum dolor. </code>
+            <p>Lorem ipsum dolor sit.</p>
+    </body>
+    </html>
+
+
+
+</body>
+</html>

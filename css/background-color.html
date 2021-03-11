@@ -1,0 +1,101 @@
+    <!-- background-color -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world!</h1>
+    <p>This is a background-color!</p>
+</body>
+</html>
+
+    <!-- opacity/transparency -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            background-color: tomato;
+        }
+
+        div.first{
+            opacity: 0.1;
+        }
+        div.second{
+            opacity: 0.3;
+        }
+        div.third{
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transparent Box</h1>
+    <p>this is a opacity</p>
+
+    <div class="first">
+        <h1>opacity 0.1</h1>
+    </div>
+
+    <div class="second">
+        <h1>opacity 0.3</h1>
+    </div>
+
+    <div class="third">
+        <h1>opacity 0.6</h1>
+    </div>
+
+    <div>
+        <h1>opacity 1 (default)</h1>
+    </div>
+
+</body>
+</html>
+
+    <!-- Transparency using RGBA -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            background: rgb(0, 128, 0);
+        }
+
+        div.first{
+            background:rgba(0,128,0, 0.1) ;
+        }
+        div.second{
+            background:rgba(0,128,0, 0.3) ;
+        }
+        div.third{
+            background:rgba(0,128,0, 0.6) ;
+        }
+    </style>
+</head>
+<body>
+    <h1>With RGBA color values: </h1>
+    <p>this is a opacity</p>
+
+    <div class="first">
+        <h1>10% opacity </h1>
+    </div>
+
+    <div class="second">
+        <h1>30% opacity </h1>
+    </div>
+
+    <div class="third">
+        <h1>60% opacity </h1>
+    </div>
+
+    <div>
+        <h1>default</h1>
+    </div>
+
+</body>
+</html>
