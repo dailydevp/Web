@@ -1,47 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="all.min.js"></script>
 <style>
+    h1,.top-flex,.bottom-flex ,.content, .social{
+        position: relative;
+        margin:0px;
+        top:-35px;
+        left: 150px;
+    }
     h1{
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin:0px;
+        text-decoration: none;
     }
-    p.left{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .left{
         margin :0px;
         text-decoration: none ;
         text-transform: capitalize;
     }
-    p.top{
-        text-transform: uppercase;
+    .content{
+        width: 500px;
+        
+    }
+    .top-flex {
         display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
     }
-    p.content{
-
-    }
-    p.bottom{
+    .bottom-flex{
+        display: flex;
+        justify-content: space-between;
         text-transform: capitalize;
+    }
+    .social{
+        justify-content: space-around;
     }
 </style>
 </head>
 <body>
-    <p class="left"><a href="https://www.kukjegallery.com/">home</a></p>
-    <p class="left"><a href="https://www.kukjegallery.com/KJ_gallery_contact.php?page=contact">contact</a></p>
-<h1><a href=""></a>kukge gallery</h1>
+    
+        <div class="left"><a href="https://www.kukjegallery.com/">home</a></div>
+        <div class="left"><a href="https://www.kukjegallery.com/KJ_gallery_contact.php?page=contact">contact</a></div>
+    
+        <h1><a href="https://www.kukjegallery.com/">kukge gallery</a></h1>
+    </div>
 
-    <p class="top"><a href="https://www.kukjegallery.com/KJ_exhibitions_currentL.php?page=current"></a>exhibition</p>
-    <p class="top"><a href="https://www.kukjegallery.com/KJ_artistsL.php"></a>artists</p>
-    <p class="top"><a href=""></a>publications</p>
-    <p class="top"><a href=""></a>gallery</p>
-    <p class="top"><a href=""></a>news</p>
-    <p class="top"><a href=""></a>videos</p>
+    <div class="top-flex">
+
+       <a href="https://www.kukjegallery.com/KJ_exhibitions_currentL.php?page=current">exhibition </a> 
+       <a href="https://www.kukjegallery.com/KJ_artistsL.php">artists</a>
+       <a href="https://www.kukjegallery.com/KJ_publicationsL.php">publications</a>
+       <a href="https://www.kukjegallery.com/KJ_gallery.php?page=gallery">gallery</a>
+       <a href="https://www.kukjegallery.com/KJ_news.php">news</a>
+       <a href="https://www.kukjegallery.com/KJ_videos.php?cate=all">videos</a>
+    </div>
 
     
-    <p class="content" img src></p>
+    <div class="content">
+        <!-- <img src="https://www.kukjegallery.com/db_img/promotion/upcoming_Robert_Mapplethorpe___More_Life_d9eeaf87b3.jpg"></div> -->
 
-<p class="bottom">top</p>
-<p class="bottom">contact</p>
-<p class="bottom">internship</p>
-<p class="bottom">subscribe</p>
+    </div>
+
+
+<div class="bottom-flex">
+    <div class="bottom">top</div>
+    <div class="bottom">contact</div>
+    <div class="bottom">internship</div>
+    <div class="bottom">subscribe</div>
+       </div>
+
+    <div class="social">
+        <a href="www.naver.com" target="_blank"> <i class="fab fa-facebook"></i></a>
+        <a href="wwww.google.com" target="_blank"> <i class="fab fa-instagram"></i></a>    
+    </div>
+
+    <div class="copyright">
+        COPYRIGHT ⓒ 1982-2021 KUKJE GALLERY. ALL RIGHTS RESERVED.
+    </div>
+    
+</div>
 </body>
 </html>
