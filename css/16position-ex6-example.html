@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .main{
+        padding: 0px;
+        margin: 0px;
+    }
+    .main>li{
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border : 5px solid green;
+        position: relative;
+    }
+    .sub{
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: -5px;
+        left: 195px;
+        list-style-type: none;
+        display: none;
+    }
+    .sub>li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border: 5px solid blue;
+    }
+    .main>li:hover>.sub {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<!-- ul.main>li*5>lorem1 -->
+<ul class="main">
+    <li>Lorem.
+        <!-- ul.sub>li*5>lorem1 -->
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Impedit.</li>
+            <li>Perferendis.</li>
+            <li>Voluptatibus.</li>
+            <li>Praesentium?</li>
+        </ul>
+    </li>
+    <li>Deleniti?
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Veniam!</li>
+            <li>Nobis?</li>
+            <li>Earum.</li>
+            <li>Numquam.</li>
+        </ul>
+     </li>
+    <li>Eum?
+    <ul class="sub">
+        <li>Lorem.</li>
+        <li>Impedit!</li>
+        <li>Sapiente!</li>
+        <li>Iusto.</li>
+        <li>Consequatur!</li>
+    </ul>
+</li>
+    <li>Neque?
+      <ul class="sub">
+          <li>Lorem.</li>
+          <li>Itaque.</li>
+          <li>Autem!</li>
+          <li>Eaque!</li>
+          <li>Odio!</li>
+      </ul>
+    </li>
+    <li>Porro!
+        <ul class="sub">
+         <li>Lorem.</li>
+         <li>Itaque.</li>
+         <li>Autem!</li>
+         <li>Eaque!</li>
+         <li>Odio!</li>
+  </ul>
+</li>
+</ul>
+</body>
+</html>
