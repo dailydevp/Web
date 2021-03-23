@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" placeholder="구구단을 외워볼까요?">
+<button onclick="gugudan()"><i class="fas fa-play"></i></button>
+<button onclick="reset()"><i class="fas fa-eraser"></i></button>
+<div id="result"></div>
+
+<script>
+    
+    function gugudan() {
+        var x = document.querySelector("input").value;
+        
+        var txt="";
+        for (i=1; i<=9; i++){
+            txt+= x + "X" + i + "=" + (x*i) +"<br>"
+        } 
+        
+        document.getElementById("result").innerHTML = txt;
+    }
+    function reset() {
+        var txt="";
+         txt+= "&nbsp;" + "<br>"
+        document.getElementById("result").innerHTML = txt;
+    }
+
+</script>
+</body>
+</html>
