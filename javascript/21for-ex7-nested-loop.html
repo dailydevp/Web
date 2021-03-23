@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="result"></div>
+    <hr>
+    <!-- #result$@2*3 -->
+    <div id="result2"></div>
+    <hr>
+    <div id="result3"></div>
+    <hr>
+    <div id="result4"></div>
+    <script>
+        //Me-
+        // var txt ='';
+        // var s='*';
+        // for(var i=1; i<6; i++){
+        //     star+=i*Number(s)+"<br>"
+            
+        //     document.getElementById("result").innerHTML=txt;
+        // }
+        var txt = "";
+        for (var i = 0; i < 5; i++) {
+            for (var j = 0; j <= i; j++) {
+                txt += "*"
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result").innerHTML = txt;
+
+        /*
+        result2
+        *****
+        ****
+        ***
+        **
+        *
+        Me
+        var txt = "";
+        for(var i=4; i>=0;i--){
+            for(var j=0; j<=i; j++){
+            txt+="*"
+            }
+        txt +="<br>";
+        }
+        document.getElementById("result2").innerHTML = txt;
+        */
+        txt = "";
+
+        for (i = 0; i < 5; i++) {
+            for (j = 5; j > i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result2").innerHTML = txt;
+
+        /*
+        
+        result3
+        *****
+         ****
+          ***
+           ** 
+            *
+        */
+        txt = "";
+
+        for (i = 0; i < 5; i++) {
+            for (var k = 0; k < i; k++) {
+                txt += "&nbsp;";
+            }
+
+            for (j = 5; j > i; j--) {
+                txt += "*";
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result3").innerHTML = txt;
+/*
+        result4
+            *
+           **
+          ***
+         ****
+        *****
+        
+        */
+        txt = "";
+        for (i = 0; i < 5; i++) {
+            for (k = 0; k < (4-i); k++) {
+                txt += "&nbsp;";
+            }
+            for (j = 0; j <= i; j++) {
+                txt += "*"
+            }
+            txt += "<br>";
+        }
+        document.getElementById("result4").innerHTML = txt;
+    </script>
+</body>
+
+</html>
