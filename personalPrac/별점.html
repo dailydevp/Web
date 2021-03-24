@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../css/all.min.css">
+<style>
+    a{
+        padding: 1px;
+        font-size: 50px;
+    }
+    a:hover{
+        color : red;
+        
+    }
+</style>
+</head>
+<body>
+<h1>오늘 하루 어땠나요?</h1>
+<br>
+<p onclick="change()"><a href=""><i class="far fa-star"></i></a></p>
+
+<div id="result"></div>
+<script>
+    function change() {
+        var txt ="";
+        txt += <i class="fas fa-star"></i>
+    }
+    document.getElementById("result").innerHTML = txt;
+</script>
+</body>
+</html>

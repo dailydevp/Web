@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<input type="text" placeholder="출력할 단을 입력해주세요">
+<button onclick="gugudan()"><i class="fas fa-play"></i></button>
+<div id="result"></div>
+
+<script>
+
+
+    function gugudan(params) {
+        var dan = document.querySelector("input").value;
+        dan = Number(dan)
+        var txt= ""
+
+        var i = 0;
+        while (i<10) {
+            
+            txt+= dan +"X" + i+"="+ (dan*i)+"<br>"
+            i++;
+        }
+
+        document.getElementById("result").innerHTML=txt;
+    }
+</script>
+</body>
+</html>

@@ -18,6 +18,9 @@
         
         var txt="";
         for (i=1; i<=9; i++){
+            if(i=0){
+                txt = "&nbsp;" + "<br>"
+            }
             txt+= x + "X" + i + "=" + (x*i) +"<br>"
         } 
         
