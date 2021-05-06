@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    $(document).ready(function () {
+        $("#div1").click(function () {
+            var t = $("#div1").text();
+            console.log(t);
+        });
+        $("#div2").click(function () {
+            var h = $("#div2").html();
+            console.log(h);
+        });
+    });
+</script>
+</head>
+<body>
+ <div id="div1">
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium architecto nihil culpa, quis obcaecati, enim dolores aperiam voluptas deleniti commodi tempora vitae quisquam dignissimos qui. Aspernatur vero dolorem nobis reprehenderit.</p>
+ </div>
+ <div id="div2">
+     <p>Deserunt sed non soluta quidem sint quaerat optio voluptatibus, vel temporibus officia, exercitationem praesentium alias doloribus porro in, aliquam voluptatum. Placeat assumenda necessitatibus iste officiis impedit quas dignissimos quia non!</p>
+ </div>
+</body>
+</html>

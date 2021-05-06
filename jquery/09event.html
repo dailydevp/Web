@@ -10,11 +10,15 @@
     <h1 id="head1">Lorem, ipsum dolor.</h1>
 
     <script>
-        var myclick = function name() {
+        // var myclick = function () {
+        //     console.log("double clicked");
+        // }
+
+        // $("#head1").dblclick(myclick);
+        
+        $("#head1").dblclick(function () {
             console.log("double clicked");
-        }
-            
-        $("#head1").dblclick(myclick);
+        });
     </script>
 </body>
 </html>
